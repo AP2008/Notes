@@ -44,7 +44,7 @@ CARD_TEMPLATE = """
 
 CARDS = ""
 
-dirs = os.listdir("../")
+dirs = list(filter(lambda x: x[0] != ".", os.listdir("../")))
 dirs.remove("www")
 
 for dirName in dirs:
