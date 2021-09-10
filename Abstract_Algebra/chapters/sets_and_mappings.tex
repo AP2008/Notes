@@ -1,0 +1,73 @@
+\chapter{Sets and Mappings}
+
+\section{Sets}
+\begin{definition}[set]
+  A $set$ is collection of elements.
+\end{definition}
+\begin{definition}[belongs to]
+  If $x$ belongs to $S$ $\Rightarrow$ $x \in S$.
+\end{definition}
+\begin{definition}[does not belong to]
+  If $x$ does not belong to $S$ $x$ $\Rightarrow$ $x \notin S$.
+\end{definition}
+\begin{definition}[equal sets]
+  For sets $A$ and $B$, $A = B \Leftrightarrow x \in A \Leftrightarrow x \in B$.
+\end{definition}
+\begin{definition}[null set]
+  Set with no elements: null/void set $\emptyset$.
+\end{definition}
+\begin{definition}[subset]
+  If $a \in A \Rightarrow a \in B$, $A \subset B$ or $A \subseteq B$.
+\end{definition}
+\begin{definition}[superset]
+  If $A \subset B$, $B \supset A$ or $B \supseteq A$.
+\end{definition}
+\begin{definition}[universal set]
+  Set $U$ that contains all sets in a given context.
+\end{definition}
+\begin{definition}[union]
+  Union of $A$ and $B$: \[A \cup B = \{x \in U | x \in A \text{ or } x \in B\}\]
+\end{definition}
+\begin{definition}[intersection]
+Intersection of $A$ and $B$: \[A \cap B = \{x \in U | x \in A \text{ and } x \in B\}\]
+\end{definition}
+\begin{definition}[difference]
+  Difference of $A$ and $B$: \[A - B = \{x \in U | x \in A \text{ and } x \notin B\}\]
+\end{definition}
+\begin{definition}[complement]
+  If $B \in A$, complement of $B$: $A - B$
+\end{definition}
+\begin{definition}[disjoint]
+  Disjoint: $A \cap B = \emptyset$
+\end{definition}
+\begin{theorem}[commutative, associative, distributive]
+  \leavevmode
+  \vspace{-\baselineskip}
+  \begin{enumerate}[(i)]
+    \item $A \cup A = A = A \cap A$
+    \item $A \cup B = B \cup A; A \cap B = B \cap A$
+    \item $(A \cup B) \cup C = A \cup (B \cup C),\\
+           (A \cap B) \cap C = A \cap (B \cap C)$
+    \item $A \cup (B \cap C) = (A \cup B) \cap (A \cup C),\\
+           A \cap (B \cup C) = (A \cap B) \cup (A \cap C)$
+    \item $A \cup (A \cap B) = A = A \cap (A \cup B)$
+  \end{enumerate}
+\end{theorem}
+\begin{theorem}[DeMorgan's rules]
+  \leavevmode
+  \vspace{-\baselineskip}
+  \begin{enumerate}[(i)]
+    \item $X - (X - A) = X \cap A$
+    \item $X - (A \cup B) = (X - A) \cap (X - B)$
+    \item $X - (A \cap B) = (X - A) \cup (X - B)$
+  \end{enumerate}
+\end{theorem}
+\begin{definition}[union of all sets in a set]
+  $\bigcup_{x \in S}X = \{x | x \in X \text{ for some } X \text{ in } S\}$
+\end{definition}
+\begin{definition}[intersection of all sets in a set]
+  $\bigcap_{x \in S}X = \{x | x \in X \text{ for every } X \text{ in } S\}$
+\end{definition}
+\begin{definition}[power set]
+  $\mathcal{P}(X) = {S | S \subset X}$ \textit{(including $\emptyset$)}
+\end{definition}
